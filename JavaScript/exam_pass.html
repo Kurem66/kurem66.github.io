@@ -38,7 +38,7 @@
             let js = document.myForm.js.value;
             console.log(js);
 
-            if (html < 50 || css < 50 || js < 50) {
+            if (html <= 50 || css <= 50 || js <= 50) {
                 document.write('<h1>'+name+' Fails.</h1>')
             }else if (html >= 81 && css < 81 && js < 81) {
                 document.write('<h1>'+name+' Passes with D at HTML.</h1>')
