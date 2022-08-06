@@ -28,8 +28,8 @@
         }
         let subResult = sub ();
         let subResult1 = sub (100, 30);
-        document.write(`<h3>Sub Result: ${subResult}</h3>`);
-        document.write(`<h3>Sub Result1 : ${subResult1}</h3>`);
+        document.write(`<h3>Sub Result with Default Parameter: ${subResult}</h3>`);
+        document.write(`<h3>Sub Result with Argument: ${subResult1}</h3>`);
 
         function getSize(length, width, height){
             let area = length * width;
@@ -42,6 +42,8 @@
         document.write(`<h3>Area is: ${area}</h3>`);
         document.write(`<h3>Volume is: ${volume}</h3>`);
 
+
+        // Object
         let hotel = {
             name: 'XYZ Hotel',
             rooms: 40,
@@ -64,8 +66,7 @@
 
         delete hotel.pool;
         console.log(hotel);
-
-        
+   
     </script>
 </body>
 </html>
