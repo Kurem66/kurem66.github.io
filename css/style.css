@@ -1,0 +1,238 @@
+h3{
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+small{
+    color: yellow;
+
+}
+
+/* universal selector */
+
+*{
+    /* color: red; */
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+/* tag / element selector */
+
+h1{
+    color: green;
+}
+
+/* attribute selector */
+
+a[title="google"]{
+    color: yellow;
+}
+
+/* id selector */
+#idselector{
+    color: green;
+    letter-spacing: 20px;
+    line-height: 50px;
+    text-indent: 50px;
+    font-size: 30px;
+}
+
+/* class selector */
+.classselector{
+    color: red;
+    word-spacing: 40px;
+    line-height: 40px;
+}
+
+/* decendent selector */
+.desc a {
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+}
+
+/* child selector */
+.child > a {
+    color: green;
+}
+
+/* pseudo selector */
+a:link {
+    color: aquamarine;
+}
+
+a:hover {
+    color: red;
+    letter-spacing: 20px;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: rgb(80, 150, 255);
+}
+
+/* target  */
+p:target {
+    border: 1px solid red;
+    color: green;
+    word-spacing: 20px;
+}
+div:target {
+    color: rebeccapurple;
+}
+
+/* border */
+.borderone{
+    border: 10px solid yellow;
+}
+
+.bordertwo{
+    border-left: 3px solid red;
+}
+
+.borderstyleone{
+    border-style: dashed;
+}
+
+.borderstylemix{
+    /* border-style: dotted solid; */
+    /* top and bottom/ left and right */
+    /* border-style: dotted dashed double; */
+    /* top/left and right/bottom */
+    border-style: solid dashed dotted double;
+    /* top right bottom left */
+}
+
+.borderwidth{
+    border-width: 1px 10px; /*use2gether with style*/
+    border-style: dotted;
+}
+
+.marginone{
+    margin-: 100px;
+    border: 1px solid red;
+}
+
+.margintwo{
+    margin-left: 50px;
+}
+
+.padding{
+    padding: 100px 20px;
+    border: solid 1px rgb(0, 255, 136);
+}
+
+/* inline */
+.inline{
+    border: 1px solid black;
+    display: inline-block;
+    width: 200px;
+
+}
+
+.block{
+    border: 1px solid red;
+    display: inline-block;
+    width: 200px;
+}
+
+/* float */
+.float_left img{
+    width: 20%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.float_right img{
+    width: 20%;
+    float: right;
+}
+
+/* grid */
+.grid_one div,.grid_two div,.grid_three div,.grid_four div,.grid_five div,.grid_six div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.grid_one,.grid_two,.grid_three,.grid_four,.grid_five,.grid_six{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_two{
+    grid-column-gap: 40px;
+}
+
+.grid_three{
+    grid-row-gap: 50px;
+}
+
+.grid_four{
+    grid-gap: 60px; /*both row and colum*/
+}
+
+.column_add{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.row_add {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* Position */
+.relative_parent{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid red;
+}
+
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid yellow;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.absolute_parent{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid rgb(64, 255, 0);
+}
+
+.absolute{
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 80px;
+    right: 200px;
+    color: orange;
+    border: 1px dotted black;
+}
+
+/* font */
+.online{
+    font-family: 'Silkscreen', cursive;
+}
+
+@font-face {
+    src: url(../Rubik_Maze/OFL.txt);
+    font-family: rubik_maze;
+}
