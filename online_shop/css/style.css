@@ -37,7 +37,6 @@
     text-transform: capitalize;
     color: #000;
     font-size: 20px;
-    
 }
 
 .navbar ul li a:hover{
@@ -393,9 +392,9 @@
     text-align: center;
 }
 
-.blog_clear{
+/* .blog_clear{
     clear: both;
-}
+} */
 
 
 /* contact */
